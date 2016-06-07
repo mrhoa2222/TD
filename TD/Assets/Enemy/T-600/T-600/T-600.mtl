@@ -1,0 +1,60 @@
+# 
+# 
+newmtl T600mat1
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\\t600_highres.tga
+map_Bump Texture\\t600_highres_bump.tga
+
+
+newmtl T600mat2
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\\t600.tga
+map_Bump Texture\\t600_bump.tga
+
+
+newmtl T600mat3
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\\t600_eyes.tga
+
+
+newmtl T600mat4
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\\t600_lens.tga
+
+
+newmtl T600mat5
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Texture\\t600_eyes_glow.tga
+map_d Texture\\t600_eyes_glow.tga
+
+

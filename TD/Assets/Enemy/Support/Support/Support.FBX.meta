@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 52eef11f606b5f74993a2eefc3c409b1
+timeCreated: 1463407318
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip-CarrierAssault
+    100002: Bip-CarrierAssault-Head
+    100004: Bip-CarrierAssault-L-Calf
+    100006: Bip-CarrierAssault-L-Clavicle
+    100008: Bip-CarrierAssault-L-Finger0
+    100010: Bip-CarrierAssault-L-Finger01
+    100012: Bip-CarrierAssault-L-Finger02
+    100014: Bip-CarrierAssault-L-Finger1
+    100016: Bip-CarrierAssault-L-Finger11
+    100018: Bip-CarrierAssault-L-Finger12
+    100020: Bip-CarrierAssault-L-Finger2
+    100022: Bip-CarrierAssault-L-Finger21
+    100024: Bip-CarrierAssault-L-Finger22
+    100026: Bip-CarrierAssault-L-Finger3
+    100028: Bip-CarrierAssault-L-Finger31
+    100030: Bip-CarrierAssault-L-Finger32
+    100032: Bip-CarrierAssault-L-Finger4
+    100034: Bip-CarrierAssault-L-Finger41
+    100036: Bip-CarrierAssault-L-Finger42
+    100038: Bip-CarrierAssault-L-Foot
+    100040: Bip-CarrierAssault-L-Forearm
+    100042: Bip-CarrierAssault-L-ForeTwist
+    100044: Bip-CarrierAssault-L-Hand
+    100046: Bip-CarrierAssault-L-Thigh
+    100048: Bip-CarrierAssault-L-Toe0
+    100050: Bip-CarrierAssault-L-UpperArm
+    100052: Bip-CarrierAssault-Neck
+    100054: Bip-CarrierAssault-Pelvis
+    100056: Bip-CarrierAssault-R-Calf
+    100058: Bip-CarrierAssault-R-Clavicle
+    100060: Bip-CarrierAssault-R-Finger0
+    100062: Bip-CarrierAssault-R-Finger01
+    100064: Bip-CarrierAssault-R-Finger02
+    100066: Bip-CarrierAssault-R-Finger1
+    100068: Bip-CarrierAssault-R-Finger11
+    100070: Bip-CarrierAssault-R-Finger12
+    100072: Bip-CarrierAssault-R-Finger2
+    100074: Bip-CarrierAssault-R-Finger21
+    100076: Bip-CarrierAssault-R-Finger22
+    100078: Bip-CarrierAssault-R-Finger3
+    100080: Bip-CarrierAssault-R-Finger31
+    100082: Bip-CarrierAssault-R-Finger32
+    100084: Bip-CarrierAssault-R-Finger4
+    100086: Bip-CarrierAssault-R-Finger41
+    100088: Bip-CarrierAssault-R-Finger42
+    100090: Bip-CarrierAssault-R-Foot
+    100092: Bip-CarrierAssault-R-Forearm
+    100094: Bip-CarrierAssault-R-ForeTwist
+    100096: Bip-CarrierAssault-R-Hand
+    100098: Bip-CarrierAssault-R-Thigh
+    100100: Bip-CarrierAssault-R-Toe0
+    100102: Bip-CarrierAssault-R-UpperArm
+    100104: Bip-CarrierAssault-Spine
+    100106: Bip-CarrierAssault-Spine1
+    100108: Bip-CarrierAssault-Spine2
+    100110: BoC_CarrierAssault-L-Elbow
+    100112: BoC_CarrierAssault-L-Knee
+    100114: BoC_CarrierAssault-L-Shoulder
+    100116: BoC_CarrierAssault-Neck_01
+    100118: BoC_CarrierAssault-R-Elbow
+    100120: BoC_CarrierAssault-R-Knee
+    100122: BoC_CarrierAssault-R-Shoulder
+    100124: CH_Support
+    100126: //RootNode
+    400000: Bip-CarrierAssault
+    400002: Bip-CarrierAssault-Head
+    400004: Bip-CarrierAssault-L-Calf
+    400006: Bip-CarrierAssault-L-Clavicle
+    400008: Bip-CarrierAssault-L-Finger0
+    400010: Bip-CarrierAssault-L-Finger01
+    400012: Bip-CarrierAssault-L-Finger02
+    400014: Bip-CarrierAssault-L-Finger1
+    400016: Bip-CarrierAssault-L-Finger11
+    400018: Bip-CarrierAssault-L-Finger12
+    400020: Bip-CarrierAssault-L-Finger2
+    400022: Bip-CarrierAssault-L-Finger21
+    400024: Bip-CarrierAssault-L-Finger22
+    400026: Bip-CarrierAssault-L-Finger3
+    400028: Bip-CarrierAssault-L-Finger31
+    400030: Bip-CarrierAssault-L-Finger32
+    400032: Bip-CarrierAssault-L-Finger4
+    400034: Bip-CarrierAssault-L-Finger41
+    400036: Bip-CarrierAssault-L-Finger42
+    400038: Bip-CarrierAssault-L-Foot
+    400040: Bip-CarrierAssault-L-Forearm
+    400042: Bip-CarrierAssault-L-ForeTwist
+    400044: Bip-CarrierAssault-L-Hand
+    400046: Bip-CarrierAssault-L-Thigh
+    400048: Bip-CarrierAssault-L-Toe0
+    400050: Bip-CarrierAssault-L-UpperArm
+    400052: Bip-CarrierAssault-Neck
+    400054: Bip-CarrierAssault-Pelvis
+    400056: Bip-CarrierAssault-R-Calf
+    400058: Bip-CarrierAssault-R-Clavicle
+    400060: Bip-CarrierAssault-R-Finger0
+    400062: Bip-CarrierAssault-R-Finger01
+    400064: Bip-CarrierAssault-R-Finger02
+    400066: Bip-CarrierAssault-R-Finger1
+    400068: Bip-CarrierAssault-R-Finger11
+    400070: Bip-CarrierAssault-R-Finger12
+    400072: Bip-CarrierAssault-R-Finger2
+    400074: Bip-CarrierAssault-R-Finger21
+    400076: Bip-CarrierAssault-R-Finger22
+    400078: Bip-CarrierAssault-R-Finger3
+    400080: Bip-CarrierAssault-R-Finger31
+    400082: Bip-CarrierAssault-R-Finger32
+    400084: Bip-CarrierAssault-R-Finger4
+    400086: Bip-CarrierAssault-R-Finger41
+    400088: Bip-CarrierAssault-R-Finger42
+    400090: Bip-CarrierAssault-R-Foot
+    400092: Bip-CarrierAssault-R-Forearm
+    400094: Bip-CarrierAssault-R-ForeTwist
+    400096: Bip-CarrierAssault-R-Hand
+    400098: Bip-CarrierAssault-R-Thigh
+    400100: Bip-CarrierAssault-R-Toe0
+    400102: Bip-CarrierAssault-R-UpperArm
+    400104: Bip-CarrierAssault-Spine
+    400106: Bip-CarrierAssault-Spine1
+    400108: Bip-CarrierAssault-Spine2
+    400110: BoC_CarrierAssault-L-Elbow
+    400112: BoC_CarrierAssault-L-Knee
+    400114: BoC_CarrierAssault-L-Shoulder
+    400116: BoC_CarrierAssault-Neck_01
+    400118: BoC_CarrierAssault-R-Elbow
+    400120: BoC_CarrierAssault-R-Knee
+    400122: BoC_CarrierAssault-R-Shoulder
+    400124: CH_Support
+    400126: //RootNode
+    4300000: CH_Support
+    9500000: //RootNode
+    13700000: CH_Support
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

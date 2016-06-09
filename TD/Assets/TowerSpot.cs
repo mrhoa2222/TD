@@ -6,7 +6,7 @@ public class TowerSpot : MonoBehaviour {
 	void OnMouseUp (){
 		Debug.Log ("TowerSpot clicked.");
 
-		BuldingManager bm = GameObject.FindObjectOfType<BuldingManager> ();
+		BuildingManager bm = GameObject.FindObjectOfType<BuildingManager> ();
 		if (bm.selectedtower != null) {
 			ScoreManager sm = GameObject.FindObjectOfType<ScoreManager> ();
 			if (sm.money < bm.selectedtower.GetComponent<Tower> ().cost) {

@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour {
 	public Text moneyText;
 	public Text livesText;
 
-	public void LoseLife(int l =1){
+	public void LoseLife(){
 		lives -= 1;
 		if (lives <= 0) {
 			GameOver ();

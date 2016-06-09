@@ -7,8 +7,6 @@ public class Tower : MonoBehaviour {
 
 	Transform flash1;
 	ParticleSystem ps1;
-	Transform flash2;
-	ParticleSystem ps2;
 
 	public float range = 100f;
 	public GameObject bulletPrefab;
@@ -24,13 +22,12 @@ public class Tower : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		turretTransform = transform.Find ("Head");
-		flash1 = this.transform.GetChild (1).transform.GetChild (0).transform.GetChild (0);
-		flash2 = this.transform.GetChild (1).transform.GetChild (1).transform.GetChild (0);
+		flash1 = this.transform.GetChild (1).transform.GetChild (0);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-	
+
 		Enemy[] enemis = GameObject.FindObjectsOfType<Enemy> ();
 
 		Enemy nearstEnemy = null;
@@ -58,14 +55,12 @@ public class Tower : MonoBehaviour {
 		if (fireCooldownLeft <= 0 && dir.magnitude <= range) {
 			fireCooldownLeft = fireCooldown;
 			ShootAt (nearstEnemy);
-			ps1 = flash1.GetComponent<ParticleSystem> ();
-			ps1.Play ();
-			ps2 = flash2.GetComponent<ParticleSystem> ();
-			ps2.Play ();
-		} else {
-			//ps1.Stop ();
-			//ps2.Stop ();
 		}
+
+		if (dir.magnitude > range) {
+			ps1.Stop ();
+		}
+			
 	}
 
 	void ShootAt(Enemy e){
@@ -76,10 +71,9 @@ public class Tower : MonoBehaviour {
 		b.damage = damage;
 		b.radius = radius;
 
-
-		//GameObject go = this.transform.GetChild (0).gameObject;
-		//Animation ami = go.GetComponent<Animation> ();
-		//ami.Play ("Take 001");
-		//Debug.Log ("zzzz");
+		ps1 = flash1.GetComponent<ParticleSystem> ();
+		ps1.Play ();
+		//Animation ami = this.GetComponent<Animation> ();
+		//ami.Play ();
 	}
 }

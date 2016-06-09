@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{033B30CE-11D3-0809-2EB6-303D91D3EB97}</ProjectGuid>
+    <ProjectGuid>{FFE83FE9-913E-4C7F-E5AE-2C97DBB071B8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,11 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BuldingManager.cs" />
+     <Compile Include="Assets\BuildingManager.cs" />
      <Compile Include="Assets\Bullet.cs" />
      <Compile Include="Assets\Enemy.cs" />
      <Compile Include="Assets\EnemySpawner.cs" />
-     <Compile Include="Assets\PathNode.cs" />
      <Compile Include="Assets\ScoreManager.cs" />
      <Compile Include="Assets\Test.cs" />
      <Compile Include="Assets\Tower.cs" />

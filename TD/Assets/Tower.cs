@@ -4,6 +4,7 @@ using System.Collections;
 public class Tower : MonoBehaviour {
 
 	Transform turretTransform;
+	Animation an;
 
 	Transform flash1;
 	ParticleSystem ps1;
@@ -57,10 +58,10 @@ public class Tower : MonoBehaviour {
 			ShootAt (nearstEnemy);
 		}
 
-		if (dir.magnitude > range) {
+		if (fireCooldownLeft > 0 && dir.magnitude > range) {
 			ps1.Stop ();
+			an.Stop ();
 		}
-			
 	}
 
 	void ShootAt(Enemy e){
@@ -73,7 +74,8 @@ public class Tower : MonoBehaviour {
 
 		ps1 = flash1.GetComponent<ParticleSystem> ();
 		ps1.Play ();
-		//Animation ami = this.GetComponent<Animation> ();
-		//ami.Play ();
+
+		an = transform.GetComponent<Animation> ();
+		an.Play ();
 	}
 }

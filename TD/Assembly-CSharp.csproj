@@ -45,15 +45,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BuildingManager.cs" />
-     <Compile Include="Assets\Bullet.cs" />
-     <Compile Include="Assets\Enemy.cs" />
-     <Compile Include="Assets\EnemySpawner.cs" />
-     <Compile Include="Assets\ScoreManager.cs" />
-     <Compile Include="Assets\Test.cs" />
-     <Compile Include="Assets\Tower.cs" />
-     <Compile Include="Assets\TowerSpot.cs" />
-     <Compile Include="Assets\test1.cs" />
+     <Compile Include="Assets\Havoc_rotor.cs" />
+     <Compile Include="Assets\Scrips\BuildingManager.cs" />
+     <Compile Include="Assets\Scrips\Bullet.cs" />
+     <Compile Include="Assets\Scrips\Enemy.cs" />
+     <Compile Include="Assets\Scrips\EnemySpawner.cs" />
+     <Compile Include="Assets\Scrips\ScoreManager.cs" />
+     <Compile Include="Assets\Scrips\Test.cs" />
+     <Compile Include="Assets\Scrips\Tower.cs" />
+     <Compile Include="Assets\Scrips\TowerSpot.cs" />
+     <Compile Include="Assets\Scrips\test1.cs" />
+     <None Include="Assets\Object\Space time ship\space time ship.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

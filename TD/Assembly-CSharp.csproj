@@ -45,11 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Havoc_rotor.cs" />
      <Compile Include="Assets\Scrips\BuildingManager.cs" />
      <Compile Include="Assets\Scrips\Bullet.cs" />
+     <Compile Include="Assets\Scrips\Controller Scripts\LevelMenuController.cs" />
+     <Compile Include="Assets\Scrips\Controller Scripts\MainMenuController.cs" />
      <Compile Include="Assets\Scrips\Enemy.cs" />
      <Compile Include="Assets\Scrips\EnemySpawner.cs" />
+     <Compile Include="Assets\Scrips\Havoc_rotor.cs" />
      <Compile Include="Assets\Scrips\ScoreManager.cs" />
      <Compile Include="Assets\Scrips\Test.cs" />
      <Compile Include="Assets\Scrips\Tower.cs" />

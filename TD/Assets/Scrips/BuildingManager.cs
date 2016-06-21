@@ -18,4 +18,8 @@ public class BuildingManager : MonoBehaviour {
 	public void SelectTowerType(GameObject prefab){
 		selectedtower = prefab; 
 	}
+
+	public void BackToMenu(){
+		Application.LoadLevel ("Menu");
+	}
 }

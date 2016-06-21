@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Object\Fire\Script\FireLightScript.cs" />
      <Compile Include="Assets\Scrips\BuildingManager.cs" />
      <Compile Include="Assets\Scrips\Bullet.cs" />
      <Compile Include="Assets\Scrips\Controller Scripts\LevelMenuController.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\Scrips\test1.cs" />
      <None Include="Assets\Object\Space time ship\space time ship.xml" />
      <None Include="Assets\Object\Space Shooter\Info.txt" />
+     <None Include="Assets\Object\Fire\License.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

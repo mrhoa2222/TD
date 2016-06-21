@@ -7,16 +7,20 @@ public class TowerSpot : MonoBehaviour {
 		Debug.Log ("TowerSpot clicked.");
 
 		BuildingManager bm = GameObject.FindObjectOfType<BuildingManager> ();
+
 		if (bm.selectedtower != null) {
 			ScoreManager sm = GameObject.FindObjectOfType<ScoreManager> ();
-			if (sm.money < bm.selectedtower.GetComponent<Tower> ().cost) {
-				Debug.Log ("Not enough money!");
-				return;
+			if (bm.selectedtower.GetComponent<Tower> () != null) {
+				if (sm.money < bm.selectedtower.GetComponent<Tower> ().cost) {
+					Debug.Log ("Not enough money!");
+					return;
+				} else {
+					sm.money -= bm.selectedtower.GetComponent<Tower> ().cost;
+				}
 			}
-			sm.money -= bm.selectedtower.GetComponent<Tower> ().cost;
 
 
-			Instantiate (bm.selectedtower, transform.parent.position, transform.parent.rotation);
+			Instantiate (bm.selectedtower, transform.position, transform.rotation);
 			Destroy (transform.parent.gameObject);
 		}
 	}

@@ -19,8 +19,27 @@ public class TowerSpot : MonoBehaviour {
 				}
 			}
 
+			if (bm.selectedtower.GetComponent<Tower_Air> () != null) {
+				if (sm.money < bm.selectedtower.GetComponent<Tower_Air> ().cost) {
+					Debug.Log ("Not enough money!");
+					return;
+				} else {
+					sm.money -= bm.selectedtower.GetComponent<Tower_Air> ().cost;
+				}
+			}
+
+			if (bm.selectedtower.GetComponent<Lazer> () != null) {
+				if (sm.money < bm.selectedtower.GetComponent<Lazer> ().cost) {
+					Debug.Log ("Not enough money!");
+					return;
+				} else {
+					sm.money -= bm.selectedtower.GetComponent<Lazer> ().cost;
+				}
+			}
+
 
 			Instantiate (bm.selectedtower, transform.position, transform.rotation);
+			bm.selectedtower = null;
 			Destroy (transform.parent.gameObject);
 		}
 	}

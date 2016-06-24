@@ -6,15 +6,18 @@ public class Tower : MonoBehaviour {
 	Transform turretTransform;
 	//Animation an;
 
-	//Transform flash1;
-	//ParticleSystem ps1;
+	Transform flash1;
+	ParticleSystem ps1;
 
-	float range = 20f;
+
+	public float range = 20f;
+	public AudioClip clip;
 	public GameObject bulletPrefab;
 
 	public int cost = 5;
 
-	float fireCooldown = 0.1f;
+	Enemy nearstEnemy = null;
+	public float fireCooldown = 0.1f;
 	float fireCooldownLeft=0;
 
 	public float damage = 1;
@@ -23,26 +26,28 @@ public class Tower : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		turretTransform = transform.Find ("Head");
-		//flash1 = this.transform.GetChild (1).transform.GetChild (0);
+		flash1 = this.transform.GetChild (1).transform.GetChild (0);
+		ps1 = flash1.GetComponent<ParticleSystem> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
 
 		Enemy[] enemis = GameObject.FindObjectsOfType<Enemy> ();
-
-		Enemy nearstEnemy = null;
-		float dist = Mathf.Infinity;
-
-		foreach (Enemy e in enemis) {
-			float d = Vector3.Distance (this.transform.position, e.transform.position);
-			if (nearstEnemy == null || d < dist) {
-				nearstEnemy = e;
-				dist = d;
+		if (nearstEnemy == null) {
+			float i = range;
+			foreach (Enemy e in enemis) {
+				float d = Vector3.Distance (this.transform.position, e.transform.position);
+				if (d <i) {
+					nearstEnemy = e;
+					i = d;
+				}
 			}
 		}
+
 		if (nearstEnemy == null) {
 			//Debug.Log ("No enemis?");
+			ps1.Stop();
 			return;
 		}
 
@@ -52,20 +57,20 @@ public class Tower : MonoBehaviour {
 		if (Vector3.Distance (this.transform.position, nearstEnemy.transform.position) <= range) {
 			turretTransform.rotation = Quaternion.Euler (0, lookRot.eulerAngles.y, 0);
 		} else {
+			ps1.Stop ();
 
 		}
-
+			
 		fireCooldownLeft -= Time.deltaTime;
 
 		if (fireCooldownLeft <= 0 && dir.magnitude <= range) {
 			fireCooldownLeft = fireCooldown;
 			ShootAt (nearstEnemy);
 		}
-
-		//if (fireCooldownLeft > 0 && dir.magnitude > range) {
-			//ps1.Stop ();
-			//an.Stop ();
-		//}
+		if (dir.magnitude > range) {
+			nearstEnemy = null;
+		}
+		
 	}
 
 	void ShootAt(Enemy e){
@@ -76,9 +81,8 @@ public class Tower : MonoBehaviour {
 		b.damage = damage;
 		b.radius = radius;
 
-		//ps1 = flash1.GetComponent<ParticleSystem> ();
-		//ps1.Play ();
-
+		ps1.Play ();
+		this.transform.GetComponent<AudioSource> ().PlayOneShot (clip, 0.5f);
 		//an = transform.GetComponent<Animation> ();
 		//an.Play ();
 	}

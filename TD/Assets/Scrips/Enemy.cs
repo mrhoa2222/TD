@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
 
@@ -10,12 +11,18 @@ public class Enemy : MonoBehaviour {
 
 	float speed=5f;
 
+	private Image healthBar;
+
+	public float maxHealth;
 	public float health = 3f;
 	public int moneyValue=1;
+
+	public float Health{ get { return health; } }
 
 	// Use this for initialization
 	void Start () {
 		pathGO = GameObject.Find ("Path");
+		healthBar = transform.FindChild ("EnemyCanvas").FindChild ("Health_EnemyDie").FindChild ("Health").GetComponent<Image> ();
 	}
 
 	void GetNextPathNode(){
@@ -57,6 +64,7 @@ public class Enemy : MonoBehaviour {
 
 	public void TakeDamage(float damage){
 		health -= damage;
+		healthBar.fillAmount = health / maxHealth;
 		if (health <= 0) {
 			Die ();
 		}

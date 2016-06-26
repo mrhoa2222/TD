@@ -11,6 +11,7 @@ public class Lazer : MonoBehaviour {
 
 
 	public float range = 20f;
+	public AudioClip clip;
 	public GameObject bulletPrefab;
 
 	public int cost = 5;
@@ -84,7 +85,7 @@ public class Lazer : MonoBehaviour {
 
 
 		ps1.Play ();
-
+		this.transform.GetComponent<AudioSource> ().PlayOneShot (clip, 0.1f);
 		//an = transform.GetComponent<Animation> ();
 		//an.Play ();
 	}

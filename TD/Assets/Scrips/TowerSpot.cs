@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TowerSpot : MonoBehaviour {
+public class TowerSpot : MonoBehaviour
+{
 
-	void OnMouseUp (){
+	void OnMouseUp ()
+	{
 		Debug.Log ("TowerSpot clicked.");
 
 		BuildingManager bm = GameObject.FindObjectOfType<BuildingManager> ();
@@ -36,11 +38,12 @@ public class TowerSpot : MonoBehaviour {
 					sm.money -= bm.selectedtower.GetComponent<Lazer> ().cost;
 				}
 			}
+				
+				Instantiate (bm.selectedtower, transform.position, transform.rotation);
+				bm.selectedtower = null;
+//			Destroy (transform.parent.gameObject);
+//				this.transform.GetComponent<MeshRenderer> ().enabled = false;
 
-
-			Instantiate (bm.selectedtower, transform.position, transform.rotation);
-			bm.selectedtower = null;
-			Destroy (transform.parent.gameObject);
 		}
 	}
 }

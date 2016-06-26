@@ -18,8 +18,8 @@ public class MenuScrips : MonoBehaviour {
 		Time.timeScale = 1;
 	}
 
-	public void RestartGame(){
-		Application.LoadLevel ("Scene3");
+	public void RestartGame(string name){
+		Application.LoadLevel (name);
 		Time.timeScale = 1;
 	}
 

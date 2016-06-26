@@ -54,6 +54,7 @@
      <Compile Include="Assets\Muzzle Flash\PyroParticles\Prefab\Script\MeteorSwarmScript.cs" />
      <Compile Include="Assets\Muzzle Flash\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
      <Compile Include="Assets\Object\Fire\Script\FireLightScript.cs" />
+     <Compile Include="Assets\Prefabs\Circle\DrawCircle.cs" />
      <Compile Include="Assets\Scrips\BuildingManager.cs" />
      <Compile Include="Assets\Scrips\Bullets\Air\Bullet_Air.cs" />
      <Compile Include="Assets\Scrips\Bullets\Bullet.cs" />
@@ -72,6 +73,7 @@
      <Compile Include="Assets\Scrips\Tower.cs" />
      <Compile Include="Assets\Scrips\TowerSpot.cs" />
      <Compile Include="Assets\Scrips\Tower_Air.cs" />
+     <Compile Include="Assets\Scrips\Upgrade_Sell.cs" />
      <None Include="Assets\Object\Space time ship\space time ship.xml" />
      <None Include="Assets\Object\Space Shooter\Info.txt" />
      <None Include="Assets\Muzzle Flash\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
